@@ -4,8 +4,8 @@ A full-stack web application that connects couples with wedding coordinators, al
 
 ## 🚀 Live Demo
 
-- **Frontend**: [Your deployment URL]
-- **Backend API**: [Your API URL]
+- **Frontend**: https://wedding-coordinator.vercel.app
+- **Backend API**: https://wedding-coordinator-backend-jt8c.onrender.com
 
 ## 📋 Features
 
@@ -68,14 +68,7 @@ emmaproject/
 - npm or yarn
 - MongoDB (optional - will use in-memory storage if not available)
 
-### 1. Clone the Repository
-
-```bash
-git clone [your-repo-url]
-cd emmaproject
-```
-
-### 2. Backend Setup
+### 1. Backend Setup
 
 ```bash
 cd backend
@@ -85,7 +78,7 @@ npm run dev
 
 The backend will start on `https://wedding-coordinator-backend-jt8c.onrender.com`
 
-### 3. Frontend Setup
+### 2. Frontend Setup
 
 ```bash
 cd frontend
@@ -94,16 +87,6 @@ npm run dev
 ```
 
 The frontend will start on `https://wedding-coordinator.vercel.app`
-
-### 4. Environment Variables
-
-#### Backend (.env)
-
-```
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/wedding-coordinator
-NODE_ENV=development
-```
 
 #### Frontend (.env.local)
 
@@ -218,14 +201,9 @@ The application includes:
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
 
-This project is licensed under the MIT License.
 
-## 👥 Contact
-
-For questions or support, please contact [your-email@example.com]
-
----
+👤 Author
+Built with ❤️ by Olumuyiwa Emmanuel Adesanya
 
 **Note**: This is an MVP (Minimum Viable Product) designed for demonstration purposes. Additional features like authentication, payment processing, and advanced admin panels can be added based on requirements.

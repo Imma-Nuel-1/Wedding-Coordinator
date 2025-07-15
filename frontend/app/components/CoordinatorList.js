@@ -128,9 +128,9 @@ const CoordinatorList = forwardRef((props, ref) => {
               className="input-field"
             >
               <option value="all">All Prices</option>
-              <option value="low">Under $2,500</option>
-              <option value="medium">$2,500 - $3,000</option>
-              <option value="high">Over $3,000</option>
+              <option value="low">Under ₦3,000,000</option>
+              <option value="medium">₦3,000,000 - ₦4,000,000</option>
+              <option value="high">Over ₦5,000,000</option>
             </select>
           </div>
         </div>

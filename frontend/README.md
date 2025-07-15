@@ -53,7 +53,7 @@ This is the frontend application for the Wedding Coordinator Marketplace MVP bui
 4. Update the environment variables in `.env.local`:
 
    ```
-   NEXT_PUBLIC_API_URL=http://localhost:5000
+   NEXT_PUBLIC_API_URL=https://wedding-coordinator-backend-jt8c.onrender.com
    ```
 
 5. Start the development server:
@@ -62,7 +62,7 @@ This is the frontend application for the Wedding Coordinator Marketplace MVP bui
    npm run dev
    ```
 
-6. Open your browser and navigate to `http://localhost:3000`
+6. Open your browser and navigate to `https://wedding-coordinator.vercel.app/`
 
 ### Build for Production
 

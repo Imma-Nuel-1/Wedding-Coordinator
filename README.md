@@ -83,7 +83,7 @@ npm install
 npm run dev
 ```
 
-The backend will start on `http://localhost:5000`
+The backend will start on `https://wedding-coordinator-backend-jt8c.onrender.com`
 
 ### 3. Frontend Setup
 
@@ -93,7 +93,7 @@ npm install
 npm run dev
 ```
 
-The frontend will start on `http://localhost:3000`
+The frontend will start on `https://wedding-coordinator.vercel.app`
 
 ### 4. Environment Variables
 
@@ -108,7 +108,7 @@ NODE_ENV=development
 #### Frontend (.env.local)
 
 ```
-NEXT_PUBLIC_API_URL=http://localhost:5000
+NEXT_PUBLIC_API_URL=https://wedding-coordinator-backend-jt8c.onrender.com
 ```
 
 ## 📱 Usage

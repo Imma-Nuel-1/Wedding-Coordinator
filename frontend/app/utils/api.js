@@ -1,4 +1,6 @@
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_URL ||
+  "https://wedding-coordinator-backend-jt8c.onrender.com";
 
 export async function getCoordinators(searchTerm = "") {
   try {

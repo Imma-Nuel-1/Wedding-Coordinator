@@ -27,3 +27,30 @@
 .dark {
   color-scheme: dark;
 }
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background-image: linear-gradient(
+    270deg,
+    #ff00c8,
+    #ffd500,
+    #00ffc8,
+    #00a2ff,
+    #a200ff,
+    #ff0059,
+    #ff00c8
+  );
+  background-size: 400% 400%;
+  animation: moveGradient 6s ease infinite;
+}

@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   FaMapMarkerAlt,
-  FaDollarSign,
   FaStar,
   FaCalendarAlt,
   FaPhone,
@@ -16,6 +15,7 @@ import {
 import { getCoordinator } from "../../utils/api";
 import BookingModal from "../../components/BookingModal";
 import Header from "../../components/Header";
+import { FaNairaSign } from "react-icons/fa6";
 
 export default function CoordinatorDetail() {
   const params = useParams();
@@ -129,9 +129,13 @@ export default function CoordinatorDetail() {
                 </div>
 
                 <div className="flex items-center text-gray-600 dark:text-gray-400">
-                  <FaDollarSign className="mr-3" />
-                  <span className="font-semibold">
-                    ${coordinator.price.toLocaleString()}
+                  <FaNairaSign className="mr-3" />
+                  <span className="text-sm font-medium">
+                    {new Intl.NumberFormat("en-NG", {
+                      style: "currency",
+                      currency: "NGN",
+                      minimumFractionDigits: 0,
+                    }).format(coordinator.price)}
                   </span>
                 </div>
 

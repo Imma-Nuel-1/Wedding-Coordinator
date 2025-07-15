@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { FaMapMarkerAlt, FaDollarSign, FaStar } from "react-icons/fa";
+import { FaMapMarkerAlt, FaStar } from "react-icons/fa";
+import { FaNairaSign } from "react-icons/fa6";
 
 export default function CoordinatorCard({ coordinator }) {
   const coordinatorId = coordinator.id || coordinator._id;
@@ -36,9 +37,13 @@ export default function CoordinatorCard({ coordinator }) {
         </div>
 
         <div className="flex items-center text-gray-600 dark:text-gray-400 mb-4">
-          <FaDollarSign className="mr-2" />
+          <FaNairaSign className="mr-2" />
           <span className="text-sm font-medium">
-            ${coordinator.price.toLocaleString()}
+            {new Intl.NumberFormat("en-NG", {
+              style: "currency",
+              currency: "NGN",
+              minimumFractionDigits: 0,
+            }).format(coordinator.price)}
           </span>
         </div>
 

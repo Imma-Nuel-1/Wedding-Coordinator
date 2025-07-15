@@ -37,13 +37,8 @@ This is the backend API for the Wedding Coordinator Marketplace MVP. It provides
    ```bash
    npm install
    ```
-
-2. Set up environment variables:
-
-   - Copy `.env.example` to `.env`
-   - Update MongoDB URI if needed (optional - will use in-memory storage if not provided)
-
-3. Run the server:
+   
+2. Run the server:
 
    ```bash
    # Development
@@ -76,3 +71,6 @@ The API includes proper error handling for:
 - Missing coordinators
 - Duplicate bookings
 - Unavailable dates
+
+✍️ Author
+Built with ❤️ by Olumuyiwa Emmanuel Adesanya
